@@ -59,7 +59,7 @@
 }
 
 .table .model-id {
-  font-size: 14px;
+  font-size: 12px;
   font-family: monospace;
   color: #888;
   margin: 5px 0;
@@ -94,6 +94,7 @@
 .table .tag {
   display: inline-block;
   padding: 2px 8px;
+  margin: 2px 0px;
   color: white;
   border-radius: 12px; /* Rounded corners */
   font-size: 12px; /* Adjust the font size as needed */
@@ -154,4 +155,32 @@
 
 .sup-note:hover::after {
   pointer-events: auto;
+}
+
+@media screen and (max-width: 512px) {
+  .table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .table td {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .human-row .institution,
+  .table .institution,
+  .table .model-source {
+    font-size: 12px;
+  }
+
+  .table .model-id,
+  .table .date,
+  .table .tag {
+    font-size: 10px;
+  }
+
+  .table .variance {
+    font-size: 9px;
+  }
 }
