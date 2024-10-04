@@ -1,0 +1,148 @@
+/* Basic table styling */
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Header styling */
+.table th {
+  /* background-color: #f2f2f2; */
+  color: #333;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Row styling */
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Human performance row styling */
+.human-row {
+  background-color: #eee;
+}
+
+.human-row .institution {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.human-row a {
+  color: #1367a7;
+  text-decoration: none;
+}
+
+.human-row a:hover {
+  text-decoration: underline;
+}
+
+.random-row {
+  background-color: #eee;
+}
+
+/* Model row styling */
+.table .date {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.table .institution {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+
+.table .model-id {
+  font-size: 14px;
+  font-family: monospace;
+  color: #888;
+  margin: 5px 0;
+}
+
+.table .model-id a {
+  color: #888;
+  text-decoration: none;
+}
+
+.table .model-id a:hover {
+  color: #1367a7;
+  text-decoration: underline;
+}
+
+.table .model-source {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.table .variance {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Bold text for performance metrics */
+.table td b {
+  font-weight: bold;
+}
+
+/* Tag styling */
+.table .tag {
+  display: inline-block;
+  padding: 2px 8px;
+  color: white;
+  border-radius: 12px; /* Rounded corners */
+  font-size: 12px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table .text-tag {
+  background-color: #4caf50;
+}
+
+.table .vision-tag {
+  background-color: #ff9800;
+}
+
+.table .open-tag {
+  background-color: #2196f3;
+  /* background-color: #1367a7; */
+}
+
+.table .purple-tag {
+  background-color: #9c27b0;
+}
+
+.sup-note {
+  vertical-align: super;
+  font-size: smaller;
+  color: brown;
+  font-weight: bold;
+  cursor: help;
+  position: relative;
+}
+
+.sup-note:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sup-note:hover::after {
+  opacity: 1;
+}
