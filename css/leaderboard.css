@@ -126,9 +126,10 @@
   font-weight: bold;
   cursor: help;
   position: relative;
+  text-decoration: none;
 }
 
-.sup-note:hover::after {
+.sup-note::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 100%;
@@ -140,9 +141,17 @@
   border-radius: 4px;
   white-space: nowrap;
   opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
+}
+
+.sup-note:hover::after,
+.sup-note:focus::after {
+  opacity: 0.8;
+  visibility: visible;
 }
 
 .sup-note:hover::after {
-  opacity: 1;
+  pointer-events: auto;
 }
