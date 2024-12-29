@@ -116,7 +116,7 @@
   /* background-color: #1367a7; */
 }
 
-.table .purple-tag {
+.table .think-tag {
   background-color: #9c27b0;
 }
 
@@ -198,9 +198,21 @@
 
   .sup-note:focus::after {
     opacity: 0.8;
+    animation: show-hide 2s forwards;
   }
 
   .sup-note:focus {
     outline: none;
+  }
+
+  @keyframes show-hide {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    10%,
+    90% {
+      opacity: 0.8;
+    }
   }
 }

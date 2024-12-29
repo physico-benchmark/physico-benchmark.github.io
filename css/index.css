@@ -18,6 +18,10 @@ div.content {
   margin-right: auto;
 }
 
+div.narrower {
+  width: 80% !important;
+}
+
 div.header div {
   margin: 6px;
   text-align: center;

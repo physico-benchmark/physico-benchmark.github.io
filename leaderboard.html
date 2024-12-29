@@ -68,16 +68,34 @@
         <div class="note-block"><sup>=</sup> equal contribution</div>
       </div>
       <div>
-        <span class="link-block"
-          ><a target="_blank" href="./paper.pdf">[Paper]</a></span
-        >
-        <!-- <span class="link-block"
-          ><a target="_blank" href="https://github.com">[GitHub]</a></span
-        >
-        <span class="link-block"
-          ><a target="_blank" href="https://hf.co">[Dataset]</a></span
-        > -->
-        <span class="link-block"><a href="./index.html">[Webpage]</a></span>
+        <!-- * Paper -->
+        <span class="link-block">
+          <a target="_blank" href="./paper.pdf"
+            ><img
+              src="https://img.shields.io/badge/Paper-PDF-red?&labelColor=lightgray&logo=arxiv&logoColor=brown" /><img
+          /></a>
+        </span>
+        <!-- * Dataset -->
+        <span class="link-block">
+          <a
+            target="_blank"
+            href="https://huggingface.co/datasets/ShunchiZhang/PhysiCo/"
+            ><img
+              src="https://img.shields.io/badge/HuggingFace-Dataset-yellow?labelColor=lightgray&logo=huggingface" /><img
+          /></a>
+        </span>
+        <!-- * Code -->
+        <span class="link-block">
+          <a target="_blank" href="https://github.com/physico-benchmark/physico"
+            ><img
+              src="https://img.shields.io/badge/GitHub-Code-gray?labelColor=lightgray&logo=github&logoColor=gray" /><img /></a
+        ></span>
+        <!-- * Homepage -->
+        <span class="link-block">
+          <a href="./index.html"
+            ><img
+              src="https://img.shields.io/badge/Homepage-Visit-blue?labelColor=lightgray&logo=homeassistantcommunitystore&logoColor=white" /><img /></a
+        ></span>
       </div>
     </div>
 
@@ -97,11 +115,12 @@
       <!-- Human -->
       <tr class="human-row">
         <td>
-          <p>--</p>
-          <p class="institution">WeChat AI</p>
+          <!-- <p>--</p> -->
+          <!-- <p class="institution">WeChat AI</p> -->
         </td>
         <td>
-          Human Performance
+          Human
+          <!-- Performance -->
           <!-- <p class="model-source">
             <a href="https://arxiv.org/abs/24xx.xxxxx"> (Yu et al., 2024) </a>
           </p> -->
@@ -132,7 +151,41 @@
           <b>39.5<span class="variance">±1.1</span></b>
         </td>
       </tr>
-      <!-- o1 -->
+      <!-- gemini 2 fte -->
+      <tr>
+        <td>
+          <p>2</p>
+          <p class="institution">Google DeepMind</p>
+        </td>
+        <td style="word-break: break-word">
+          Gemini-2.0 Flash
+          <p class="model-id">gemini-2.0-flash-thinking-exp</p>
+          <span class="tag text-tag">TEXT</span>
+          <span class="tag vision-tag">VISION</span>
+          <span class="tag think-tag">THINK</span>
+        </td>
+        <td>49.8<span class="variance">±0.8</span></td>
+        <td><span class="variance">Come Soon</span></td>
+        <td><span class="variance">Come Soon</span></td>
+      </tr>
+      <!-- o1 vision -->
+      <tr>
+        <td>
+          <p>3</p>
+          <p class="institution">OpenAI</p>
+        </td>
+        <td style="word-break: break-word">
+          o1
+          <p class="model-id">o1-2024-12-17</p>
+          <span class="tag text-tag">TEXT</span>
+          <span class="tag vision-tag">VISION</span>
+          <span class="tag think-tag">THINK</span>
+        </td>
+        <td>46.5</td>
+        <td><span class="variance">Wait API</span></td>
+        <td><span class="variance">Wait API</span></td>
+      </tr>
+      <!-- o1 text -->
       <tr>
         <td>
           <p>--</p>
@@ -145,17 +198,19 @@
             data-tooltip="Evaluated on a subset due to rate limits."
             >*</span
           >
-          <p class="model-id">o1-preview-2024-09-12</p>
+          <!-- <p class="model-id">o1-preview-2024-09-12</p> -->
+          <p class="model-id">o1-2024-12-17</p>
           <span class="tag text-tag">TEXT</span>
+          <span class="tag think-tag">THINK</span>
         </td>
         <td>42.0</td>
-        <td>--</td>
-        <td>--</td>
+        <td><span class="variance">Wait API</span></td>
+        <td><span class="variance">Wait API</span></td>
       </tr>
       <!-- GPT-4 -->
       <tr>
         <td>
-          <p>2</p>
+          <p>4</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -170,7 +225,7 @@
       <!-- GPT-4 -->
       <tr>
         <td>
-          <p>3</p>
+          <p>5</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -186,7 +241,7 @@
       <!-- GPT-4o -->
       <tr>
         <td>
-          <p>4</p>
+          <p>6</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -201,7 +256,7 @@
       <!-- GPT-3.5 -->
       <tr>
         <td>
-          <p>5</p>
+          <p>7</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -216,7 +271,7 @@
       <!-- InternVL -->
       <tr>
         <td>
-          <p>6</p>
+          <p>8</p>
           <p class="institution">Shanghai AI Lab</p>
         </td>
         <td style="word-break: break-word">
@@ -244,7 +299,7 @@
       <!-- LLaVA -->
       <tr>
         <td>
-          <p>7</p>
+          <p>9</p>
           <p class="institution">UW Madison</p>
         </td>
         <td style="word-break: break-word">
@@ -276,7 +331,7 @@
       <!-- Random -->
       <tr class="random-row">
         <td>
-          <p>-</p>
+          <p>10</p>
         </td>
         <td style="word-break: break-word">Random</td>
         <td colspan="3">25</td>
@@ -284,7 +339,7 @@
       <!-- Llama-3 -->
       <tr>
         <td>
-          <p>8</p>
+          <p>11</p>
           <p class="institution">Meta AI</p>
         </td>
         <td style="word-break: break-word">
@@ -317,7 +372,7 @@
       <!-- Mistral -->
       <tr>
         <td>
-          <p>9</p>
+          <p>12</p>
           <p class="institution">Mistral AI</p>
         </td>
         <td style="word-break: break-word">
