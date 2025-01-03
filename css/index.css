@@ -56,6 +56,11 @@ div.teaser img {
   margin: 0px 5px;
 }
 
+.badge {
+  width: auto;
+  height: 32px;
+}
+
 .dataset-name {
   font-weight: bold;
   color: #81a526;
@@ -161,6 +166,10 @@ hr {
   }
   .link-block {
     font-size: 20px;
+  }
+  .badge {
+    width: auto;
+    height: 28px;
   }
   h1 {
     font-size: 26px;
