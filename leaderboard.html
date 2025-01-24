@@ -182,7 +182,7 @@
       <!-- ^ [mm] o1-2024-12-17 -->
       <tr>
         <td>
-          <p>2</p>
+          <p>3</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -221,7 +221,7 @@
       <!-- ^ [text] GPT-4o -->
       <tr>
         <td>
-          <p>6</p>
+          <p>4</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -233,10 +233,25 @@
         <td>31.3<span class="variance">±2.9</span></td>
         <td>35.5<span class="variance">±2.5</span></td>
       </tr>
-      <!-- ^ [mm] GPT-4v -->
+      <!-- ^ [text] GPT-4 -->
       <tr>
         <td>
           <p>5</p>
+          <p class="institution">OpenAI</p>
+        </td>
+        <td style="word-break: break-word">
+          GPT-4
+          <p class="model-id">gpt-4-turbo-2024-04-09</p>
+          <span class="tag text-tag">TEXT</span>
+        </td>
+        <td>41.3<span class="variance">±1.3</span></td>
+        <td>28.2<span class="variance">±2.3</span></td>
+        <td>38.3<span class="variance">±1.2</span></td>
+      </tr>
+      <!-- ^ [mm] GPT-4v -->
+      <tr>
+        <td>
+          <p>6</p>
           <p class="institution">OpenAI</p>
         </td>
         <td style="word-break: break-word">
@@ -249,10 +264,25 @@
         <td>28.7<span class="variance">±2.4</span></td>
         <td>32.0<span class="variance">±1.5</span></td>
       </tr>
-      <!-- ^ LLaVA -->
+      <!-- ^ GPT-3.5 -->
       <tr>
         <td>
-          <p>9</p>
+          <p>7</p>
+          <p class="institution">OpenAI</p>
+        </td>
+        <td style="word-break: break-word">
+          GPT-3.5
+          <p class="model-id">gpt-3.5-turbo-1106</p>
+          <span class="tag text-tag">TEXT</span>
+        </td>
+        <td>26.5<span class="variance">±2.5</span></td>
+        <td>24.4<span class="variance">±0.8</span></td>
+        <td>30.0<span class="variance">±2.5</span></td>
+      </tr>
+      <!-- ^ [mm] LLaVA -->
+      <tr>
+        <td>
+          <p>8</p>
           <p class="institution">UW Madison</p>
         </td>
         <td style="word-break: break-word">
@@ -281,20 +311,72 @@
         <td>28.5<span class="variance">±1.5</span></td>
         <td>24.7<span class="variance">±3.2</span></td>
       </tr>
-      <!-- ^ [text] GPT-4 -->
+      <!-- ^ [mm] InternVL -->
       <tr>
         <td>
-          <p>4</p>
-          <p class="institution">OpenAI</p>
+          <p>9</p>
+          <p class="institution">Shanghai AI Lab</p>
         </td>
         <td style="word-break: break-word">
-          GPT-4
-          <p class="model-id">gpt-4-turbo-2024-04-09</p>
+          InternVL
+          <p class="model-id">
+            <a href="https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5">
+              🤗 InternVL-Chat-V1-5
+            </a>
+          </p>
+          <p class="model-source">
+            <a href="https://arxiv.org/abs/2404.16821">(Chen et al., 2024)</a>
+          </p>
           <span class="tag text-tag">TEXT</span>
+          <span class="tag vision-tag">VISION</span>
+          <span>
+            <a href="https://github.com/OpenGVLab/InternVL" class="tag open-tag"
+              >OPEN</a
+            >
+          </span>
         </td>
-        <td>41.3<span class="variance">±1.3</span></td>
-        <td>28.2<span class="variance">±2.3</span></td>
-        <td>38.3<span class="variance">±1.2</span></td>
+        <td>26.3<span class="variance">±1.6</span></td>
+        <td>26.9<span class="variance">±4.1</span></td>
+        <td>24.8<span class="variance">±1.3</span></td>
+      </tr>
+      <!-- ^ Random -->
+      <tr class="random-row">
+        <td>
+          <p>--</p>
+        </td>
+        <td style="word-break: break-word">Random</td>
+        <td colspan="3">25</td>
+      </tr>
+      <!-- ^ Mistral -->
+      <tr>
+        <td>
+          <p>10</p>
+          <p class="institution">Mistral AI</p>
+        </td>
+        <td style="word-break: break-word">
+          Mistral
+          <p class="model-id">
+            <a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">
+              🤗 Mistral-7B-Instruct-v0.2
+            </a>
+          </p>
+          <p class="model-source">
+            <a href="https://arxiv.org/abs/2310.06825">
+              (Jiang et al., 2023)
+            </a>
+          </p>
+          <span class="tag text-tag">TEXT</span>
+          <span>
+            <a
+              href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2"
+              class="tag open-tag"
+              >OPEN</a
+            >
+          </span>
+        </td>
+        <td>21.5<span class="variance">±0.3</span></td>
+        <td>26.0<span class="variance">±1.4</span></td>
+        <td>23.2<span class="variance">±0.4</span></td>
       </tr>
       <!-- ^ [text] Llama 3 -->
       <tr>
@@ -328,88 +410,6 @@
         <td>23.5<span class="variance">±2.5</span></td>
         <td>27.3<span class="variance">±0.6</span></td>
         <td>21.7<span class="variance">±2.0</span></td>
-      </tr>
-      <!-- ^ [mm] InternVL -->
-      <tr>
-        <td>
-          <p>8</p>
-          <p class="institution">Shanghai AI Lab</p>
-        </td>
-        <td style="word-break: break-word">
-          InternVL
-          <p class="model-id">
-            <a href="https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5">
-              🤗 InternVL-Chat-V1-5
-            </a>
-          </p>
-          <p class="model-source">
-            <a href="https://arxiv.org/abs/2404.16821">(Chen et al., 2024)</a>
-          </p>
-          <span class="tag text-tag">TEXT</span>
-          <span class="tag vision-tag">VISION</span>
-          <span>
-            <a href="https://github.com/OpenGVLab/InternVL" class="tag open-tag"
-              >OPEN</a
-            >
-          </span>
-        </td>
-        <td>26.3<span class="variance">±1.6</span></td>
-        <td>26.9<span class="variance">±4.1</span></td>
-        <td>24.8<span class="variance">±1.3</span></td>
-      </tr>
-      <!-- ^ Mistral -->
-      <tr>
-        <td>
-          <p>12</p>
-          <p class="institution">Mistral AI</p>
-        </td>
-        <td style="word-break: break-word">
-          Mistral
-          <p class="model-id">
-            <a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2">
-              🤗 Mistral-7B-Instruct-v0.2
-            </a>
-          </p>
-          <p class="model-source">
-            <a href="https://arxiv.org/abs/2310.06825">
-              (Jiang et al., 2023)
-            </a>
-          </p>
-          <span class="tag text-tag">TEXT</span>
-          <span>
-            <a
-              href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2"
-              class="tag open-tag"
-              >OPEN</a
-            >
-          </span>
-        </td>
-        <td>21.5<span class="variance">±0.3</span></td>
-        <td>26.0<span class="variance">±1.4</span></td>
-        <td>23.2<span class="variance">±0.4</span></td>
-      </tr>
-      <!-- ^ Random -->
-      <tr class="random-row">
-        <td>
-          <p>10</p>
-        </td>
-        <td style="word-break: break-word">Random</td>
-        <td colspan="3">25</td>
-      </tr>
-      <!-- ^ GPT-3.5 -->
-      <tr>
-        <td>
-          <p>7</p>
-          <p class="institution">OpenAI</p>
-        </td>
-        <td style="word-break: break-word">
-          GPT-3.5
-          <p class="model-id">gpt-3.5-turbo-1106</p>
-          <span class="tag text-tag">TEXT</span>
-        </td>
-        <td>26.5<span class="variance">±2.5</span></td>
-        <td>24.4<span class="variance">±0.8</span></td>
-        <td>30.0<span class="variance">±2.5</span></td>
       </tr>
     </table>
   </body>
