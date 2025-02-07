@@ -61,6 +61,10 @@ div.teaser img {
   height: 2vw;
 }
 
+.badge image {
+  vertical-align: bottom;
+}
+
 .dataset-name {
   font-weight: bold;
   color: #81a526;
@@ -146,6 +150,15 @@ hr {
   font-family: monospace;
   font-size: 8pt;
   text-wrap: auto;
+}
+
+.paper-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.paper-title a:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1120px) {
