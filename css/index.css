@@ -53,12 +53,12 @@ div.teaser img {
 .link-block {
   font-size: 24px;
   font-weight: bold;
-  margin: 0px 5px;
+  margin: 0px;
 }
 
 .badge {
   width: auto;
-  height: 2vw;
+  height: 1.91vw;
 }
 
 .badge image {
